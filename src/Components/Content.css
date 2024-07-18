@@ -1,0 +1,117 @@
+    .content-container {
+        padding: 20px;
+        color: white;
+        border-radius: 10px;
+        text-align: center;
+        margin: 30px;
+        overflow: hidden;
+    }
+    
+    .title {
+        font-size: 50px;
+        margin-bottom: 10px;
+        font-weight: bolder;
+    }
+    
+    .description {
+        font-size: 20px;
+        color: rgb(179, 178, 178);
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    
+    .red {
+        color: red;
+    }
+    
+    .skyblue {
+        color: #5ebbf4;
+    }
+    
+    .orange {
+        color: #f15e23;
+    }
+    
+    .absolute-icons {
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        pointer-events: none;
+    }
+    
+    .absolute-icons div {
+        pointer-events: auto;
+    }
+    
+    @keyframes pop {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        1000% {
+            transform: scale(1);
+        }
+    }
+    
+    .youtube {
+        position: absolute;
+        filter: drop-shadow(0 0 25px red);
+        top: 10px;
+        left: 10px;
+        color: red;
+        animation: pop 3s ease-in-out infinite alternate;
+        font-size: 60px;
+    }
+    
+    .twitter {
+        position: absolute;
+        animation: pop 3s ease-in-out infinite alternate;
+        filter: drop-shadow(0 0 25px rgb(159, 155, 155));
+        top: 10px;
+        right: 10px;
+        color: rgb(159, 155, 155);
+        font-size: 60px;
+    }
+    
+    .facebook {
+        padding-left: 4rem;
+        position: absolute;
+        animation: pop 3s ease-in-out infinite alternate;
+        filter: drop-shadow(0 0 25px #1da1f2);
+        bottom: 10px;
+        left: 10px;
+        color: #1da1f2;
+        /* Twitter color */
+        font-size: 60px;
+    }
+    
+    .instagram {
+        padding-right: 4rem;
+        position: absolute;
+        filter: drop-shadow(0 0 25px #f15e23);
+        animation: pop 3s ease-in-out infinite alternate;
+        bottom: 10px;
+        right: 10px;
+        color: #f15e23;
+        /* Instagram color */
+        font-size: 60px;
+    }
+    
+    @media (max-width: 768px) {
+        .title {
+            font-size: 30px;
+        }
+        .description {
+            font-size: 15px;
+        }
+        .absolute-icons div {
+            font-size: 40px;
+        }
+    }

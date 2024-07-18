@@ -1,0 +1,28 @@
+.navbar-container {
+    width: 100vdw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.navbar-items {
+    display: flex;
+}
+
+.navbar-item {
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar-item:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width:500px) {
+    .navbar-container {
+        font-size: small;
+    }
+}
